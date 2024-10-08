@@ -47,6 +47,10 @@ Project {
     }
 
     QmlFiles {
+        directory: "Core"
+    }
+
+    QmlFiles {
         directory: "Generated"
     }
 

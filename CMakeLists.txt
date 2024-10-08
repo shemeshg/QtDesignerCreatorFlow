@@ -18,7 +18,6 @@ qt_add_executable(${CMAKE_PROJECT_NAME}
     main.cpp
 )
 
-add_subdirectory(Bal)
 
 qt_add_qml_module(${CMAKE_PROJECT_NAME}
     URI shalom
@@ -40,11 +39,13 @@ set_target_properties(${CMAKE_PROJECT_NAME} PROPERTIES
 
 add_subdirectory(design/Design)
 add_subdirectory(design/DesignContent)
-
+add_subdirectory(design/Core)
+add_subdirectory(Bal)
 
 target_link_libraries(${CMAKE_PROJECT_NAME}
     PRIVATE Qt6::Quick
     Bal
+    Coreplugin
     Designplugin
     DesignContentplugin
 )

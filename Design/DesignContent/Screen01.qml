@@ -9,20 +9,16 @@ Check out https://doc.qt.io/qtcreator/creator-quick-ui-forms.html for details on
 import QtQuick
 import QtQuick.Controls
 import Design
-
+import Core
 
 Rectangle {
-    width:  parent.width//Constants.width
+    width: parent.width //Constants.width
     height: parent.height //Constants.height
 
+    color: CoreSystemPalette.window
 
-    color: Constants.backgroundColor
-
-
-
-    Text {
+    CoreLabel {
         text: qsTr("Hello Design ") + Constants.mytype.name
         anchors.centerIn: parent
-        font.family: Constants.font.family
     }
 }

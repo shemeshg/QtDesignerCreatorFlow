@@ -3,6 +3,7 @@
 
 import QtQuick
 import Design
+import Core
 
 Window {
     width:  Constants.width
@@ -10,6 +11,7 @@ Window {
 
     visible: true
     title: "Design"
+    color: CoreSystemPalette.window
 
     Screen01 {
         id: mainScreen
