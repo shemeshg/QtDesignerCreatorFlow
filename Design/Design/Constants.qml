@@ -23,12 +23,22 @@ QtObject {
 
     readonly property color backgroundColor: "#EAEAEA"
 
-    property MyType mytype: MyType {}
+
 
     /*
     property StudioApplication application: StudioApplication {
         fontPath: Qt.resolvedUrl("../DesignContent/" + relativeFontDirectory)
     }
     */
+
+
+    property BalData balData: BalData {}
+
+    enum ServerStatus {
+        STOPPED,
+        STARTING,
+        RUNNING,
+        FAILED
+    }
 
 }

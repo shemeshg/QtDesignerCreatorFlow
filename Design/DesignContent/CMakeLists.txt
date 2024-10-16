@@ -9,7 +9,7 @@ qt6_add_qml_module(DesignContent
     VERSION 1.0
     RESOURCE_PREFIX "/qt/qml"
     QML_FILES
-        "Screen01.qml"
+        "FormGroupBox.qml"
         "App.qml"
 )
 
